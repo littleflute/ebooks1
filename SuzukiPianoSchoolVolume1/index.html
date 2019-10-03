@@ -1,0 +1,94 @@
+<!DOCTYPE html>	  
+<html>  
+<body> 
+<script src="https://www.w3schools.com/lib/w3.js"></script>				
+<script src="https://littleflute.github.io/JavaScript/blclass.js"></script>		
+<script src="https://littleflute.github.io/JavaScript/blApp.js"></script>		
+<div id="id_div_mp4i_bat_info" >								
+<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat">v1.3. 21 * </a>	
+<a href="..">[..]</a> <button id="id_btn_4_blApp">+++++++++++blApp+++++++++</button>	
+</div>						 
+<div id="DivCurTime"></div> 			
+<br>  
+<div id="DivButtons"> 				
+ </div> 			
+<br> 	
+<div id="id_div_4_gif" style="border:1px solid green;" >				
+</div> 									
+<br> 	
+<div id="id_div_4_jpg" style="border:1px solid blue;" >				
+IMG_20191003_142704.jpg, 
+IMG_20191003_142716.jpg, 
+IMG_20191003_142738.jpg, 
+IMG_20191003_142745.jpg, 
+IMG_20191003_142757.jpg, 
+IMG_20191003_142804.jpg, 
+IMG_20191003_142818.jpg, 
+IMG_20191003_142823.jpg, 
+IMG_20191003_142836.jpg, 
+IMG_20191003_142842.jpg, 
+IMG_20191003_142855.jpg, 
+IMG_20191003_142900.jpg, 
+IMG_20191003_142911.jpg, 
+IMG_20191003_142916.jpg, 
+IMG_20191003_142927.jpg, 
+IMG_20191003_142934.jpg, 
+IMG_20191003_142944.jpg, 
+IMG_20191003_142950.jpg, 
+IMG_20191003_143001.jpg, 
+IMG_20191003_143007.jpg, 
+IMG_20191003_143024.jpg, 
+IMG_20191003_143028.jpg, 
+IMG_20191003_143044.jpg, 
+IMG_20191003_143050.jpg, 
+IMG_20191003_143105.jpg, 
+IMG_20191003_143111.jpg, 
+IMG_20191003_143126.jpg, 
+IMG_20191003_143132.jpg, 
+IMG_20191003_143145.jpg, 
+IMG_20191003_143150.jpg, 
+IMG_20191003_143205.jpg, 
+IMG_20191003_143210.jpg, 
+IMG_20191003_143225.jpg, 
+IMG_20191003_143230.jpg, 
+IMG_20191003_143246.jpg, 
+IMG_20191003_143251.jpg, 
+IMG_20191003_143307.jpg, 
+</div> 									
+<br> 	
+<div id="id_div_4_png" style="border:1px solid blue;" >				
+</div> 								 
+<br> 	
+<div id="id_div_4_lrcJS" style="border:1px solid red;display: none;" >		
+</div> 								
+<script>  
+var str4V = '<video id="myVideo" width="720" height="480" controls> ';				
+str4V += '<source src="v1.mp4" type="video/mp4">Your browser does not support HTML5 video.'; 	
+str4V += '</video>';  										
+var md4v = blo0.blMDiv(document.body,"id_mdiv_4_myVideo" , str4V , 300,100,500,400,blColor[1]); 	
+var vid = document.getElementById("myVideo"); 
+function play(i) {
+    vid.src=i; 
+    vid.load();
+    vid.play(); 
+}
+function getCurTime() {  
+   document.getElementById("DivCurTime").innerHTML= vid.currentTime; 
+}   
+function setCurTime(t) { 
+   vid.currentTime=t;  
+   getCurTime();
+}  
+function moveMS(ms) { 
+  vid.currentTime+=ms;
+  getCurTime();  
+}   
+var _loadScript = function (id,src){					
+var	r = document.createElement("script");				
+r.id = id;								
+r.src = src; 								
+document.body.appendChild(r);						
+}									
+_loadScript ("id_script_plx","plx.js");				
+</script> 
+</body> 

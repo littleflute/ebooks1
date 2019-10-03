@@ -1,0 +1,120 @@
+<!DOCTYPE html>	  
+<html>  
+<body> 
+<script src="https://www.w3schools.com/lib/w3.js"></script>				
+<script src="https://littleflute.github.io/JavaScript/blclass.js"></script>		
+<script src="https://littleflute.github.io/JavaScript/blApp.js"></script>		
+<div id="id_div_mp4i_bat_info" >								
+<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat">v1.3. 21 * </a>	
+<a href="..">[..]</a> <button id="id_btn_4_blApp">+++++++++++blApp+++++++++</button>	
+</div>						 
+<div id="DivCurTime"></div> 			
+<br>  
+<div id="DivButtons"> 				
+ </div> 			
+<br> 	
+<div id="id_div_4_gif" style="border:1px solid green;" >				
+</div> 									
+<br> 	
+<div id="id_div_4_jpg" style="border:1px solid blue;" >				
+DSC_3324.JPG, 
+DSC_3325.JPG, 
+DSC_3326.JPG, 
+DSC_3327.JPG, 
+DSC_3328.JPG, 
+DSC_3329.JPG, 
+DSC_3330.JPG, 
+DSC_3331.JPG, 
+DSC_3332.JPG, 
+DSC_3333.JPG, 
+DSC_3334.JPG, 
+DSC_3335.JPG, 
+DSC_3336.JPG, 
+DSC_3337.JPG, 
+DSC_3338.JPG, 
+DSC_3339.JPG, 
+DSC_3340.JPG, 
+DSC_3341.JPG, 
+DSC_3342.JPG, 
+DSC_3343.JPG, 
+DSC_3344.JPG, 
+DSC_3345.JPG, 
+DSC_3346.JPG, 
+DSC_3347.JPG, 
+DSC_3348.JPG, 
+DSC_3349.JPG, 
+DSC_3350.JPG, 
+DSC_3351.JPG, 
+DSC_3352.JPG, 
+DSC_3353.JPG, 
+DSC_3354.JPG, 
+DSC_3355.JPG, 
+DSC_3356.JPG, 
+DSC_3357.JPG, 
+DSC_3358.JPG, 
+DSC_3359.JPG, 
+DSC_3360.JPG, 
+DSC_3361.JPG, 
+DSC_3362.JPG, 
+DSC_3363.JPG, 
+DSC_3364.JPG, 
+DSC_3365.JPG, 
+DSC_3366.JPG, 
+DSC_3367.JPG, 
+DSC_3368.JPG, 
+DSC_3369.JPG, 
+DSC_3370.JPG, 
+DSC_3371.JPG, 
+DSC_3372.JPG, 
+DSC_3373.JPG, 
+DSC_3374.JPG, 
+DSC_3375.JPG, 
+DSC_3376.JPG, 
+DSC_3377.JPG, 
+DSC_3378.JPG, 
+DSC_3379.JPG, 
+DSC_3380.JPG, 
+DSC_3381.JPG, 
+DSC_3382.JPG, 
+DSC_3383.JPG, 
+DSC_3384.JPG, 
+DSC_3385.JPG, 
+DSC_3386.JPG, 
+</div> 									
+<br> 	
+<div id="id_div_4_png" style="border:1px solid blue;" >				
+</div> 								 
+<br> 	
+<div id="id_div_4_lrcJS" style="border:1px solid red;display: none;" >		
+</div> 								
+<script>  
+var str4V = '<video id="myVideo" width="720" height="480" controls> ';				
+str4V += '<source src="v1.mp4" type="video/mp4">Your browser does not support HTML5 video.'; 	
+str4V += '</video>';  										
+var md4v = blo0.blMDiv(document.body,"id_mdiv_4_myVideo" , str4V , 300,100,500,400,blColor[1]); 	
+var vid = document.getElementById("myVideo"); 
+function play(i) {
+    vid.src=i; 
+    vid.load();
+    vid.play(); 
+}
+function getCurTime() {  
+   document.getElementById("DivCurTime").innerHTML= vid.currentTime; 
+}   
+function setCurTime(t) { 
+   vid.currentTime=t;  
+   getCurTime();
+}  
+function moveMS(ms) { 
+  vid.currentTime+=ms;
+  getCurTime();  
+}   
+var _loadScript = function (id,src){					
+var	r = document.createElement("script");				
+r.id = id;								
+r.src = src; 								
+document.body.appendChild(r);						
+}									
+_loadScript ("id_script_plx","plx.js");				
+</script> 
+</body> 
