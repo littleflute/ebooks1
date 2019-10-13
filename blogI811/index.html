@@ -1,0 +1,132 @@
+<!DOCTYPE html>	  
+<html>  
+<body> 
+<script src="https://www.w3schools.com/lib/w3.js"></script>				
+<script src="https://littleflute.github.io/JavaScript/blclass.js"></script>		
+<script src="https://littleflute.github.io/JavaScript/blApp.js"></script>		
+<div id="id_div_mp4i_bat_info" >								
+<a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat">v1.3. 21 * </a>	
+<a href="..">[..]</a> <button id="id_btn_4_blApp">+++++++++++blApp+++++++++</button>	
+</div>						 
+<div id="DivCurTime"></div> 			
+<br>  
+<div id="DivButtons"> 				
+ </div> 			
+<br> 	
+<div id="id_div_4_gif" style="border:1px solid green;" >				
+</div> 									
+<br> 	
+<div id="id_div_4_jpg" style="border:1px solid blue;" >				
+DSC_6133.JPG, 
+DSC_6134.JPG, 
+DSC_6135.JPG, 
+DSC_6136.JPG, 
+DSC_6137.JPG, 
+DSC_6138.JPG, 
+DSC_6139.JPG, 
+DSC_6140.JPG, 
+DSC_6141.JPG, 
+DSC_6142.JPG, 
+DSC_6143.JPG, 
+DSC_6144.JPG, 
+DSC_6145.JPG, 
+DSC_6146.JPG, 
+DSC_6147.JPG, 
+DSC_6148.JPG, 
+DSC_6149.JPG, 
+DSC_6150.JPG, 
+DSC_6151.JPG, 
+DSC_6152.JPG, 
+DSC_6153.JPG, 
+DSC_6154.JPG, 
+DSC_6155.JPG, 
+DSC_6156.JPG, 
+DSC_6157.JPG, 
+DSC_6158.JPG, 
+DSC_6159.JPG, 
+DSC_6160.JPG, 
+DSC_6161.JPG, 
+DSC_6162.JPG, 
+DSC_6163.JPG, 
+DSC_6164.JPG, 
+DSC_6165.JPG, 
+DSC_6166.JPG, 
+DSC_6167.JPG, 
+DSC_6168.JPG, 
+DSC_6169.JPG, 
+DSC_6170.JPG, 
+DSC_6171.JPG, 
+DSC_6172.JPG, 
+DSC_6173.JPG, 
+DSC_6174.JPG, 
+DSC_6175.JPG, 
+DSC_6176.JPG, 
+DSC_6177.JPG, 
+DSC_6178.JPG, 
+DSC_6179.JPG, 
+DSC_6180.JPG, 
+DSC_6181.JPG, 
+DSC_6182.JPG, 
+DSC_6183.JPG, 
+DSC_6184.JPG, 
+DSC_6185.JPG, 
+DSC_6186.JPG, 
+DSC_6187.JPG, 
+DSC_6188.JPG, 
+DSC_6189.JPG, 
+DSC_6190.JPG, 
+DSC_6191.JPG, 
+DSC_6192.JPG, 
+DSC_6193.JPG, 
+DSC_6194.JPG, 
+DSC_6195.JPG, 
+DSC_6196.JPG, 
+DSC_6197.JPG, 
+DSC_6198.JPG, 
+DSC_6199.JPG, 
+DSC_6200.JPG, 
+DSC_6201.JPG, 
+DSC_6202.JPG, 
+DSC_6203.JPG, 
+DSC_6204.JPG, 
+DSC_6205.JPG, 
+DSC_6206.JPG, 
+DSC_6207.JPG, 
+</div> 									
+<br> 	
+<div id="id_div_4_png" style="border:1px solid blue;" >				
+</div> 								 
+<br> 	
+<div id="id_div_4_lrcJS" style="border:1px solid red;display: none;" >		
+</div> 								
+<script>  
+var str4V = '<video id="myVideo" width="720" height="480" controls> ';				
+str4V += '<source src="v1.mp4" type="video/mp4">Your browser does not support HTML5 video.'; 	
+str4V += '</video>';  										
+var md4v = blo0.blMDiv(document.body,"id_mdiv_4_myVideo" , str4V , 300,100,500,400,blColor[1]); 	
+var vid = document.getElementById("myVideo"); 
+function play(i) {
+    vid.src=i; 
+    vid.load();
+    vid.play(); 
+}
+function getCurTime() {  
+   document.getElementById("DivCurTime").innerHTML= vid.currentTime; 
+}   
+function setCurTime(t) { 
+   vid.currentTime=t;  
+   getCurTime();
+}  
+function moveMS(ms) { 
+  vid.currentTime+=ms;
+  getCurTime();  
+}   
+var _loadScript = function (id,src){					
+var	r = document.createElement("script");				
+r.id = id;								
+r.src = src; 								
+document.body.appendChild(r);						
+}									
+_loadScript ("id_script_plx","plx.js");				
+</script> 
+</body> 
